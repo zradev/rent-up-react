@@ -12,7 +12,7 @@ import Footer from "../common/footer/Footer";
 const Pages = () => {
   return (
     <>
-      <Router basename="/rent-up-react">
+      <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

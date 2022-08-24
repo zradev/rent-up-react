@@ -4,6 +4,10 @@ import Back from "../common/Back";
 import img from "../images/about.jpg";
 
 const Contact = () => {
+  const submitForm = () => {
+    console.log("Submitted");
+  };
+
   return (
     <>
       <section className="contact mb">
@@ -13,15 +17,36 @@ const Contact = () => {
           cover={img}
         />
         <div className="container">
-          <form action="" className="shadow">
+          <form>
             <h4>Fillup The Form</h4>
             <div>
-              <input type="text" placeholder="Name" name="" id="" />
-              <input type="text" placeholder="Email" name="" id="" />
+              <input
+                type="text"
+                placeholder="Full Name"
+                onFocus={(e) => (e.target.placeholder = "")}
+                onBlur={(e) => (e.target.placeholder = "Full Name")}
+              />
+              <input
+                type="text"
+                placeholder="Email"
+                onFocus={(e) => (e.target.placeholder = "")}
+                onBlur={(e) => (e.target.placeholder = "Email")}
+              />
             </div>
-            <input type="text" placeholder="Subject" name="" id="" />
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button>Submit Request</button>
+            <input
+              type="text"
+              placeholder="Subject"
+              onFocus={(e) => (e.target.placeholder = "")}
+              onBlur={(e) => (e.target.placeholder = "Subject")}
+            />
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Details..."
+              onFocus={(e) => (e.target.placeholder = "")}
+              onBlur={(e) => (e.target.placeholder = "Details...")}
+            ></textarea>
+            <button onClick={submitForm}>Submit Request</button>
           </form>
         </div>
       </section>
