@@ -1,29 +1,25 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { nav } from "../../data/Data";
-import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 import { FaSignInAlt, FaTimes, FaBars } from "react-icons/fa";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
+import Menu from "../menu/Menu";
 
 const Header = () => {
   const [navList, setNavList] = useState(false);
 
+  const handleClickAway = () => {
+    setNavList(false);
+  };
+
   return (
-    <>
+    <ClickAwayListener onClickAway={handleClickAway}>
       <header>
         <div className="container flex">
           <div className="logo">
             <img src={logo} alt="wtf" />
           </div>
-          <div className="nav">
-            <ul className={navList ? "small" : "flex"}>
-              {nav.map((list, index) => (
-                <li key={index}>
-                  <Link to={list.path}>{list.text}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <Menu navList={navList} />
           <div className="button flex">
             <h4>
               <span>2</span> My List
@@ -40,7 +36,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </>
+    </ClickAwayListener>
   );
 };
 

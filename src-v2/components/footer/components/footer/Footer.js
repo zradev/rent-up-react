@@ -12,10 +12,10 @@ const Footer = () => {
           <Subscription />
           <Navigation />
         </div>
+        <div className="legal">
+          <span>2022 RentUP. Developed by Zlatomir Radev.</span>
+        </div>
       </footer>
-      <div className="legal">
-        <span>2022 RentUP. Developed by Zlatomir Radev.</span>
-      </div>
     </>
   );
 };
