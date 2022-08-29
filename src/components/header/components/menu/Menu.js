@@ -1,6 +1,7 @@
 import React from "react";
 import { nav } from "../../../../data/Data";
 import { Link } from "react-router-dom";
+import { FaSignInAlt } from "react-icons/fa";
 
 const Menu = (props) => {
   return (
@@ -11,6 +12,13 @@ const Menu = (props) => {
             <Link to={list.path}>{list.text}</Link>
           </li>
         ))}
+        <li key="sign-in-button">
+          <div className="btn1">
+            <Link to="/login">
+              Sign In <FaSignInAlt />
+            </Link>
+          </div>
+        </li>
       </ul>
     </div>
   );
