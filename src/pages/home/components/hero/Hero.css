@@ -59,7 +59,7 @@ form h4 {
   font-weight: 500;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
   .hero {
     height: 100%;
   }

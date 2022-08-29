@@ -1,67 +1,90 @@
 .footerContact {
-    background-color: #27ae60;
-    padding: 35px 0;
-    color: white;
-    font-weight: 600;
-    font-size: 20px;
+  background-color: #27ae60;
+  padding: 35px 0;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 footer {
-    background-color: #151a24;
-    padding: 50px 0;
-    color: white;
+  background-color: #151a24;
+  padding-top: 50px;
+  color: white;
 }
 
-footer h2 {
-    font-weight: 500;
-}
-
+footer h2,
 footer h3 {
-    margin-bottom: 10px;
-    font-weight: 500;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 footer p {
-    color: gray;
-    margin: 20px 0;
+  color: lightgray;
+  margin: 20px 0;
 }
 
 footer img {
-    width: 150px;
+  width: 150px;
 }
 
 footer ul li {
-    display: block;
-    color: gray;
-    margin-bottom: 20px;
+  display: block;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+footer ul li:hover {
+  color: lightgray;
+  cursor: pointer;
 }
 
 footer .box {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 footer input {
-    background-color: white;
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 footer input::placeholder {
-    color: white;
+  color: white;
 }
 
 footer .container {
-    display: grid;
-    grid-template-columns: 6fr 2fr 2fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 6fr 2fr 2fr 1fr;
+  grid-gap: 20px;
 }
 
 .legal {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #101a27;
+}
+
+@media screen and (max-width: 860px) {
+  footer .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    font-size: 20px;
+  }
+
+  footer h3 {
     text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: #101a27;
+  }
+
+  footer ul {
+    text-align: center;
+  }
+
+  footer ul li {
+    color: lightgray;
+  }
 }

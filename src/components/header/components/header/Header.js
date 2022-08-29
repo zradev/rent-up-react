@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../../../assets/images/logo.png";
-import { FaTimes, FaBars } from "react-icons/fa";
+import { FaSignInAlt, FaTimes, FaBars } from "react-icons/fa";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import Menu from "../menu/Menu";
 import "../../Header.css";
@@ -19,7 +19,7 @@ const Header = () => {
           <div className="logo">
             <img src={logo} alt="logo" />
           </div>
-          <Menu navList={navList} />
+          <Menu navList={navList} func={handleClickAway} />
           <div className="toggle">
             <button onClick={() => setNavList(!navList)}>
               {navList ? <FaTimes /> : <FaBars />}

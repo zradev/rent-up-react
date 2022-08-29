@@ -15,7 +15,7 @@
   line-height: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
   .about .container {
     flex-direction: column;
   }

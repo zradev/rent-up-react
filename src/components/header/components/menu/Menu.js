@@ -9,12 +9,14 @@ const Menu = (props) => {
       <ul className={props.navList ? "small" : "flex"}>
         {nav.map((list, index) => (
           <li key={index}>
-            <Link to={list.path}>{list.text}</Link>
+            <Link to={list.path} onClick={props.func}>
+              {list.text}
+            </Link>
           </li>
         ))}
         <li key="sign-in-button">
           <div className="btn1">
-            <Link to="/login">
+            <Link to="/login" onClick={props.func}>
               Sign In <FaSignInAlt />
             </Link>
           </div>
