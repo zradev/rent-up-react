@@ -15,11 +15,11 @@ const Menu = (props) => {
           </li>
         ))}
         <li key="sign-in-button">
-          <div className="btn1">
-            <Link to="/login" onClick={props.func}>
+          <Link to="/login" onClick={props.func} className="sing-in">
+            <p>
               Sign In <FaSignInAlt />
-            </Link>
-          </div>
+            </p>
+          </Link>
         </li>
       </ul>
     </div>

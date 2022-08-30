@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../../../assets/images/logo.png";
-import { FaSignInAlt, FaTimes, FaBars } from "react-icons/fa";
+import { FaTimes, FaBars } from "react-icons/fa";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import Menu from "../menu/Menu";
 import "../../Header.css";

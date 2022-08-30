@@ -13,9 +13,10 @@
 }
 
 .contact input,
-.contact textarea {
+.contact textarea,
+.contact button {
   border: 1px solid rgba(0, 0, 0, 0.3);
-
+  font-size: 20px;
   width: 100%;
   margin-bottom: 20px;
   margin-right: 10px;
@@ -26,6 +27,7 @@
 }
 
 .contact h4 {
+  font-size: 28px;
   margin-bottom: 30px;
 }
 

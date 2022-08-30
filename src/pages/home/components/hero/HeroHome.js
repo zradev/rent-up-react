@@ -1,12 +1,12 @@
 import React from "react";
-import "./Hero.css";
+import "./HeroHome.css";
 import { FaSearch } from "react-icons/fa";
-import Heading from "./../../../../components/heading/Heading";
+import Heading from "../../../../components/heading/Heading";
 
 const Hero = () => {
   return (
     <>
-      <section className="hero">
+      <section className="hero-home">
         <div className="container">
           <Heading
             title="Serach Your Next Home"

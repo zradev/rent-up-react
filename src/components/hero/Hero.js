@@ -1,14 +1,15 @@
 import React from "react";
+import "./Hero.css";
 
 const Hero = (props) => {
   return (
     <>
       <div className="hero">
-        <div className="container">
-          <span>{props.name}</span>
-          <h1>{props.title}</h1>
+        <div className="blended">
+          <img src={props.cover} alt="hero" />
         </div>
-        <img src={props.cover} alt="" />
+        <span>{props.name}</span>
+        <h1>{props.title}</h1>
       </div>
     </>
   );
