@@ -1,0 +1,43 @@
+.location .box {
+  position: relative;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+}
+
+.location img {
+  border-radius: 5px;
+}
+
+.location .overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background: rgb(15 28 47 /30%);
+  height: 75%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2222;
+}
+
+.location h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.location label {
+  display: block;
+  color: #fff;
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 800px) {
+  .location .overlay::after {
+    width: 280px;
+    height: 170px;
+  }
+}

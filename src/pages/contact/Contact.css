@@ -1,0 +1,46 @@
+.contact form {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.contact form div {
+  display: flex;
+}
+
+.contact textarea {
+  width: 1050px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.contact form {
+  padding: 30px;
+}
+
+.contact h4 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 860px) {
+  .contact h4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact form div {
+    flex-direction: column;
+  }
+
+  .contact input {
+    width: 100%;
+  }
+}
