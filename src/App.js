@@ -1,13 +1,13 @@
-import { Routes } from "react-router-dom";
+import { Navigate, Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
 import "./assets/global.css";
-import Header from "./components/header/components/header/Header";
+import Header from "./components/header";
 import Footer from "./components/footer";
-import About from "./pages/about/components/About";
-import Services from "./pages/services/components/Services";
-import Blog from "./pages/blog/components/Blog";
-import Pricing from "./pages/pricing/components/Pricing";
-import Contact from "./pages/contact/components/Contact";
+import About from "./pages/about";
+import Services from "./pages/services";
+import Blog from "./pages/blog";
+import Pricing from "./pages/pricing";
+import Contact from "./pages/contact";
 import Home from "./pages/home";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blog />} />

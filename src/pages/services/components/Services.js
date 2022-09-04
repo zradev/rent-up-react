@@ -8,7 +8,7 @@ const Services = () => {
     <>
       <section className="services">
         <Hero name="Services" title="Services - All Services" cover={img} />
-        <div className="featured container">
+        <div className="featured container mb">
           <FeaturedCard />
         </div>
       </section>

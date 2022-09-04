@@ -44,7 +44,7 @@ const PriceCard = () => {
                 color: item.plan === "Standard" ? "#fff" : "#27ae60",
               }}
             >
-              Start{item.plan}
+              Start {item.plan}
             </button>
           </div>
         ))}

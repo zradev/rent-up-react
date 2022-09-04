@@ -9,7 +9,7 @@ const About = () => {
       <section className="about">
         <Hero name="About Us" title="About Us - Who We Are?" cover={img} />
         <div className="container flex mtop">
-          <div className="left row">
+          <div className="left">
             <Heading
               title="Our Agency Story"
               subtitle="Check out our company story and work process"
@@ -30,7 +30,7 @@ const About = () => {
             </p>
             <button className="btn2">More About Us</button>
           </div>
-          <div className="right row">
+          <div className="right">
             <img src="./immio.jpg" alt="" />
           </div>
         </div>

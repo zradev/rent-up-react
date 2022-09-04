@@ -17,7 +17,7 @@ const Contact = () => {
           title="Get Help And Friendly Support"
           cover={img}
         />
-        <div className="container">
+        <div className="container mtop">
           <form onSubmit={submitForm}>
             <h4>Fillup The Form</h4>
             <div>

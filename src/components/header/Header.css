@@ -2,7 +2,7 @@ header {
   position: fixed;
   background-color: #fff;
   box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-  height: 13vh;
+  height: 80px;
   width: 100%;
   top: 0;
   left: 0;
@@ -32,6 +32,7 @@ header .sing-in {
   justify-content: center;
   align-items: center;
   min-width: 75px;
+  max-width: 120px;
 }
 
 @media screen and (max-width: 800px) {
@@ -51,8 +52,8 @@ header .sing-in {
 
   header .nav .small {
     position: fixed;
-    height: 43vh;
-    top: 13vh;
+    height: 42vh;
+    top: 80px;
     left: 0;
     width: 100%;
     background-color: #27ae60;
@@ -67,5 +68,6 @@ header .sing-in {
 
   header .nav .small li {
     margin-top: 5px;
+    background-color: #27ae60;
   }
 }

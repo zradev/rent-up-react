@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  margin-top: 90px;
+  margin-top: 80px;
   text-align: center;
   font-size: 22px;
   color: #fff;
@@ -27,6 +27,6 @@
 }
 .hero h1 {
   position: absolute;
-  top: 58px;
+  top: 95px;
   left: 26px;
 }
